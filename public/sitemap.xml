@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.chaosi.org/2017/05/hello-world/</loc>
+    
+    <lastmod>2017-09-05T12:25:52.152Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.chaosi.org/about/index.html</loc>
+    
+    <lastmod>2017-09-05T12:09:32.765Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.chaosi.org/tags/index.html</loc>
+    
+    <lastmod>2017-08-30T03:39:51.563Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.chaosi.org/categories/index.html</loc>
+    
+    <lastmod>2017-08-30T03:39:51.559Z</lastmod>
+    
+  </url>
+  
+</urlset>
