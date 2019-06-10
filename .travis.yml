@@ -1,30 +1,34 @@
 language: node_js
 node_js: stable
 
-# S: Build Lifecycle
-install:
-  - npm install
-
-
-#before_script:
- # - npm install -g gulp
-
-script:
-  - hexo g
-
-after_script:
-  - cd ./public
-  - git init
-  - git config user.name "chaosi-zju"
-  - git config user.email "chaosi@zju.edu.cn"
-  - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${hexo-token}@${GH_REF}" master:master
-# E: Build LifeCycle
-
 branches:
   only:
-    - hexo-src
+  - hexo-src
+
+before_install:
+- npm install -g hexo
+- npm install -g hexo-cli
+
+install:
+- npm install
+
+before_script:
+- git config --global user.name 'chaosi-zju'
+- git config --global user.email 'chaosi@zju.edu.cn'
+
+- sed -i'' "s~git@github.com:chaosi-zju/chaosi-zju.github.io.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/chaosi-zju/chaosi-zju.github.io.git~"
+  _config.yml
+
+script:
+- hexo clean
+- hexo generate
+
+after_success:
+- hexo deploy
+
 env:
- global:
-   - GH_REF: github.com/chaosi-zju/chaosi-zju.github.io
+  global:
+    secure: cxsdZXP0VLTFRXG87ovIIOY1WoMVGyg9ZsOc9CR6oYIlCqPGrsgqve4kdt3CpePkPdxcoL0nXcb0X/Id7SwN4bkAl/wnXZLx9ldMhMgofymJpmDTtxmthBzG+LKX9M2TBOs5z6lONKwp+iHxNR9U2c8GDsLL+bOU6kuEdfSqFiPmPS9sN9lYVEf8xVks/GSWFgw5TL6LLmUoLO1kbktd/nbWLirS+CyesVHtK0llV9zzkT+GvsVMfkzjDRRm0OV6l77z7jNUvX8jtlRYbTSgRHrRPGj8XtEVjiD49fK85RZ9t11nif+It9lmzIRAUBiLep2ab4CvFIjfx0slbWdRXT9TKpRyysAAzxYpQFaFIA1iKYgNuZstXbEwNR310zvX37Fc8UQ61nM5i+L1GWdA3b2AXOl921WSpBE5FQ1EisoEaaVKkXPuGLjib7Fz6wl+dwd1uACtLsd7agR7PGfeymYT2FjbHvf6kFJDnTCcoZdBfzQilgKoAYhts9xzEFc8mTfJG8ir2AnLyO6z+khXLos6AsLUhJmVFlRG73u/X0FTwIFhBdHKA4DTZ8xXuaQ5cRi2eGsZl3Du/A4B3UMRrXLsJ1aZCtLkuh1xPB14nnbGWhbh/otOp54tTFkiVeSD3Ka+OoissGBGZrbB34mw8+HNHwoKAA1DPBzEaSYp+3A=
+
+
+
