@@ -1,0 +1,30 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "chaosi-zju"
+  - git config user.email "chaosi@zju.edu.cn"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${hexo-token}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - hexo-src
+env:
+ global:
+   - GH_REF: github.com/chaosi-zju/chaosi-zju.github.io
