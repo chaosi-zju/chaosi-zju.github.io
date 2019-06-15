@@ -5,10 +5,8 @@ branches:
   only:
   - hexo-src
   
-before_install:
-- npm install -g hexo-cli
-
 install:
+- npm install -g hexo-cli
 - npm install
 
 before_script:
@@ -17,14 +15,15 @@ before_script:
 - sed -i "s#https://github.com/chaosi-zju/chaosi-zju.github.io.git#https://$REPO_TOKEN:x-oauth-basic@github.com/chaosi-zju/chaosi-zju.github.io.git#g" _config.yml
   
 script:
-- hexo clean
-- hexo generate
-
-after_success:
-- hexo deploy
+- hexo clean && hexo g -d
 
 env:
   global:
     secure: Wm1E8FdPUnwBdRDgIeJcuMXBFCmkYAu3Gd/gBlrfLzIaLTIcV+sIqe+WMPeNUxn9b3esR0JKaACeqUXdY7FEsdfTrC6EIZ0ountNzLG6Mz5k4qjJDG8YhqYq9MvL6g4JJQRDJhl8e/Yru6puz4Kh0XEmBgoKzi56fR777MMquticReo+NufI7XMMPz1lR+DiWRA1G7PA4Nqm3vQKIQh6sGJNvmJGEz5bVFsvGYQa44Vj8/KpvueWcgEuXPIPrBoDg6uUnfgHKrMTIBu9AR73RKf0wZaJ6xEFlbIM9/DcnTAXZVuDv2GYBB8So1Tle2lQVxGMaRoSgk2/FeGpQZXJelIGx8UpYX9VRm8lLKGNrOrqWJ+Zu4ck2cf7wA/DR1K/d7RervpdmQg+xtDewaKuw5b+Rv0uEVb3m+LiEQ4ZRVAI2KcK5CsLM/8eZUIMC30ARiTb3YtvkJbcmpq8ydc4yVw3QLcrNLEgd09/iabLJf9FMVLsv5DJRXx7qO6JBLv/ROgxmGiqKvH62ZnN+kCguSNu1lFDt2IGG78o5FYKqJXzLZLKqyNa7chGOm6GwGpoNCE406hkB0gLY2efzROX99XJkt8u5klCxEYTk1b2KXsodxpGdueuGOFhN7sqU+slS5M5IWTO9/3yxI4Ud9JdFcyjlD2u1bYiqtkXfc2/W/8=
+    
+cache:
+  directories:
+    - node_modules
+    
     
     
