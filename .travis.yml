@@ -4,7 +4,7 @@ node_js: stable
 branches:
   only:
   - hexo-src
-
+  
 before_install:
 - npm install -g hexo
 - npm install -g hexo-cli
@@ -15,10 +15,8 @@ install:
 before_script:
 - git config --global user.name 'chaosi-zju'
 - git config --global user.email 'chaosi@zju.edu.cn'
-
-- sed -i'' "s~git@github.com:chaosi-zju/chaosi-zju.github.io.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/chaosi-zju/chaosi-zju.github.io.git~"
-  _config.yml
-
+- sed -i'' "s~git@github.com:chaosi-zju/chaosi-zju.github.io.git~https://$REPO_TOKEN:x-oauth-basic@github.com/chaosi-zju/chaosi-zju.github.io.git~" _config.yml
+  
 script:
 - hexo clean
 - hexo generate
@@ -28,7 +26,6 @@ after_success:
 
 env:
   global:
-    secure: cxsdZXP0VLTFRXG87ovIIOY1WoMVGyg9ZsOc9CR6oYIlCqPGrsgqve4kdt3CpePkPdxcoL0nXcb0X/Id7SwN4bkAl/wnXZLx9ldMhMgofymJpmDTtxmthBzG+LKX9M2TBOs5z6lONKwp+iHxNR9U2c8GDsLL+bOU6kuEdfSqFiPmPS9sN9lYVEf8xVks/GSWFgw5TL6LLmUoLO1kbktd/nbWLirS+CyesVHtK0llV9zzkT+GvsVMfkzjDRRm0OV6l77z7jNUvX8jtlRYbTSgRHrRPGj8XtEVjiD49fK85RZ9t11nif+It9lmzIRAUBiLep2ab4CvFIjfx0slbWdRXT9TKpRyysAAzxYpQFaFIA1iKYgNuZstXbEwNR310zvX37Fc8UQ61nM5i+L1GWdA3b2AXOl921WSpBE5FQ1EisoEaaVKkXPuGLjib7Fz6wl+dwd1uACtLsd7agR7PGfeymYT2FjbHvf6kFJDnTCcoZdBfzQilgKoAYhts9xzEFc8mTfJG8ir2AnLyO6z+khXLos6AsLUhJmVFlRG73u/X0FTwIFhBdHKA4DTZ8xXuaQ5cRi2eGsZl3Du/A4B3UMRrXLsJ1aZCtLkuh1xPB14nnbGWhbh/otOp54tTFkiVeSD3Ka+OoissGBGZrbB34mw8+HNHwoKAA1DPBzEaSYp+3A=
-
-
-
+    secure: Wm1E8FdPUnwBdRDgIeJcuMXBFCmkYAu3Gd/gBlrfLzIaLTIcV+sIqe+WMPeNUxn9b3esR0JKaACeqUXdY7FEsdfTrC6EIZ0ountNzLG6Mz5k4qjJDG8YhqYq9MvL6g4JJQRDJhl8e/Yru6puz4Kh0XEmBgoKzi56fR777MMquticReo+NufI7XMMPz1lR+DiWRA1G7PA4Nqm3vQKIQh6sGJNvmJGEz5bVFsvGYQa44Vj8/KpvueWcgEuXPIPrBoDg6uUnfgHKrMTIBu9AR73RKf0wZaJ6xEFlbIM9/DcnTAXZVuDv2GYBB8So1Tle2lQVxGMaRoSgk2/FeGpQZXJelIGx8UpYX9VRm8lLKGNrOrqWJ+Zu4ck2cf7wA/DR1K/d7RervpdmQg+xtDewaKuw5b+Rv0uEVb3m+LiEQ4ZRVAI2KcK5CsLM/8eZUIMC30ARiTb3YtvkJbcmpq8ydc4yVw3QLcrNLEgd09/iabLJf9FMVLsv5DJRXx7qO6JBLv/ROgxmGiqKvH62ZnN+kCguSNu1lFDt2IGG78o5FYKqJXzLZLKqyNa7chGOm6GwGpoNCE406hkB0gLY2efzROX99XJkt8u5klCxEYTk1b2KXsodxpGdueuGOFhN7sqU+slS5M5IWTO9/3yxI4Ud9JdFcyjlD2u1bYiqtkXfc2/W/8=
+    
+    
