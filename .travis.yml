@@ -6,7 +6,6 @@ branches:
   - hexo-src
   
 before_install:
-- npm install -g hexo
 - npm install -g hexo-cli
 
 install:
@@ -15,7 +14,7 @@ install:
 before_script:
 - git config --global user.name 'chaosi-zju'
 - git config --global user.email 'chaosi@zju.edu.cn'
-- sed -i'' "s~git@github.com:chaosi-zju/chaosi-zju.github.io.git~https://$REPO_TOKEN:x-oauth-basic@github.com/chaosi-zju/chaosi-zju.github.io.git~" _config.yml
+- sed -i "s#https://github.com/chaosi-zju/chaosi-zju.github.io.git#https://$REPO_TOKEN:x-oauth-basic@github.com/chaosi-zju/chaosi-zju.github.io.git#g" _config.yml
   
 script:
 - hexo clean
