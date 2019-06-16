@@ -7,7 +7,6 @@ branches:
   
 install:
 - npm install -g hexo-cli
-- npm install -g yuque-hexo
 - npm install
 
 before_script:
