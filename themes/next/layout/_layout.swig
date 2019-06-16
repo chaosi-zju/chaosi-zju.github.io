@@ -79,7 +79,7 @@
   {% include '_scripts/third-party/schedule.swig' %}
 
   {% if theme.canvas_nest %}
-<script type="text/javascript"  color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+<script type="text/javascript"  color="0,0,255" opacity='0.7' zIndex="-2" count="90" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
   {% endif %}
 
 

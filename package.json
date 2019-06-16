@@ -6,14 +6,14 @@
     "version": "3.3.8"
   },
   "yuqueConfig": {
-    "postPath": "source/_posts/yuque",
-    "cachePath": "yuque.json",
+    "postPath": "source/_posts",  
     "mdNameFormat": "title",
     "adapter": "hexo",
     "concurrency": 5,
     "baseUrl": "https://www.yuque.com/api/v2/",
     "login": "chaosi",
     "repo": "blog",
+    "token": "8kI9s3LYWcZM6erkjatN6BCHHjaY0XNIjR3xdofE",
     "onlyPublished": false
   },
   "scripts": {
