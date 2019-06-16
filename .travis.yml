@@ -15,11 +15,7 @@ before_script:
 - sed -i "s#https://github.com/chaosi-zju/chaosi-zju.github.io.git#https://$REPO_TOKEN:x-oauth-basic@github.com/chaosi-zju/chaosi-zju.github.io.git#g" _config.yml
   
 script:
-- hexo clean
-- hexo generate
-
-after_success:
-- hexo deploy
+- npm run deploy
 
 env:
   global:

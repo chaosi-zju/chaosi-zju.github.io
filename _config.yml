@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.chaosi-zju.com   
+url: https://chaosi-zju.github.io 
 root: /
 permalink: :year/:month/:title/
 permalink_defaults:
@@ -61,12 +61,7 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-Plugins:
-- hexo-generator-sitemap
-- hexo-generator-baidu-sitemap
-- exo-generate-feed
+
 ## Themes: https://hexo.io/themes/
 theme: next
 
@@ -86,16 +81,23 @@ search:
 
 avatar: https://qiniu.chaosi.xyz/blog/huowu.jpg
 
+# Extensions
+## Plugins: https://hexo.io/plugins/
+Plugins:
+- hexo-generator-baidu-sitemap
+- hexo-generator-sitemap
+- hexo-generate-feed
+
 # hexo sitemap网站地图
-sitemap:
-    path: sitemap.xml
 baidusitemap:
     path: baidusitemap.xml
+sitemap:
+    path: sitemap.xml
 
 baidu_url_submit:
   count: 100 ## 比如3，代表提交最新的三个链接
-  host: www.chaosi.org    ## 在百度站长平台中注册的域名
-  token: N2ADxv8c2YsN7MQv ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  host: blog.chaosi-zju.com    ## 在百度站长平台中注册的域名
+  token: AJ5jrLNn37UVgx2A ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
   path: baidu_urls.txt    ## 文本文档的地址， 新链接会保存在此文本文档里
 
 

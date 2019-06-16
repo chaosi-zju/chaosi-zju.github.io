@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://blog.chaosi-zju.com/sitemap.xml
-Sitemap: http://blog.chaosi-zju.com/baidusitemap.xml
+Sitemap: https://blog.chaosi-zju.com/sitemap.xml
+Sitemap: https://blog.chaosi-zju.com/baidusitemap.xml

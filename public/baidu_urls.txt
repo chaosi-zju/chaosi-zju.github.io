@@ -1,3 +1,0 @@
-http://blog.chaosi-zju.com/2019/06/test2/
-http://blog.chaosi-zju.com/2019/06/test-travis/
-http://blog.chaosi-zju.com/2017/05/hello-world/
