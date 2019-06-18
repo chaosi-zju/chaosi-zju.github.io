@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Super pan 的 博客</title>
+  <subtitle>Develop for happiness</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.chaosi-zju.com/"/>
+  <updated>2019-06-18T03:04:56.123Z</updated>
+  <id>https://blog.chaosi-zju.com/</id>
+  
+  <author>
+    <name>Super pan</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文章2</title>
+    <link href="https://blog.chaosi-zju.com/2019/06/%E6%96%87%E7%AB%A02/"/>
+    <id>https://blog.chaosi-zju.com/2019/06/文章2/</id>
+    <published>2019-06-16T12:01:29.000Z</published>
+    <updated>2019-06-18T03:04:56.123Z</updated>
+    
+    <content type="html"><![CDATA[<p>文章2</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;文章2&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文章1</title>
+    <link href="https://blog.chaosi-zju.com/2019/06/%E6%96%87%E7%AB%A01/"/>
+    <id>https://blog.chaosi-zju.com/2019/06/文章1/</id>
+    <published>2019-06-16T12:01:03.000Z</published>
+    <updated>2019-06-18T03:04:56.123Z</updated>
+    
+    <content type="html"><![CDATA[<p>文章1</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;文章1&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
